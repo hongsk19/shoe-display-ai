@@ -22,7 +22,7 @@ if not st.session_state.logged_in:
         if username == "admin" and password == "1234":
             st.session_state.logged_in = True
             st.success("로그인 성공!")
-            st.experimental_rerun()  # 🔁 로그인 성공 후 앱 재시작
+            st.rerun()  # 🔁 로그인 성공 후 앱 재시작
         else:
             st.error("아이디 또는 비밀번호가 잘못되었습니다.")
     st.stop()
