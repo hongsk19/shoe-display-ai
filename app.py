@@ -6,7 +6,7 @@ from optimizer import optimize_display
 
 # Simple login (hardcoded)
 def login(username, password):
-    return username == "admin" and password == "1234"
+    return username == "Admin" and password == "1234"
 
 # Login screen
 if "logged_in" not in st.session_state:
