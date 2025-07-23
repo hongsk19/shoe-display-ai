@@ -19,7 +19,7 @@ if not st.session_state.logged_in:
     login_button = st.button("로그인")
 
     if login_button:
-        if username == "admin" and password == "1234":
+        if username == "Admin" and password == "1234":
             st.session_state.logged_in = True
             st.success("로그인 성공!")
             st.rerun()  # 🔁 로그인 성공 후 앱 재시작
